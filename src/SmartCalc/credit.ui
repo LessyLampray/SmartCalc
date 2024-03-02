@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>credit</class>
+ <widget class="QDialog" name="credit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>30</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(126, 125, 128);
+	border: 1px solid rgb(11, 22, 28);
+	border-radius:  30px;
+}
+QPushButton:pressed {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(60, 39, 78) stop: 1 rgb(145, 72, 126));
+}</string>
+   </property>
+   <property name="text">
+    <string>SmartCalc</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amount">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сумма кредита:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="term">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>58</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Срок:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rate">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Процентная ставка:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="type">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>410</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Тип</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="differentiated">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>390</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>differentiated</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="annuity">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>430</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>annuity</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="calculate">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>500</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Рассчитать</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="result">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>170</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Результат</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="month">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>260</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ежемесячный платеж:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="over">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>350</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Переплата:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>420</y>
+     <width>201</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Общая сумма выплат:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>321</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>36</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CreditCalc</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="am_numb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>99999999999999999322094867436162797646170844194406400.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="term_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>280</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1200.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="rate_num">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>330</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="over_l">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>350</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="total_l">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>420</y>
+     <width>201</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="ii">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>220</y>
+     <width>291</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
